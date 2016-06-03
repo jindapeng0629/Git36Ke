@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Ke36</string>
+
+    <!--activity_recent.xml-->
+    <string name="activity_recent">近期活动</string>
+    <string name="activity_type">活动类型</string>
+    <string name="activity_time">活动时间</string>
+
+    <!--popupwindow_news.xml-->
+    <string name="pop_all">全部</string>
+    <string name="pop_early">早期项目</string>
+    <string name="pop_ke_tv">氪TV</string>
+
+    <!--activity_lookinvestor.xml-->
+    <string name="looking_investors">寻找投资人</string>
+
+    <!--fragment_news_frame.xml-->
+    <string name="news">新闻</string>
+
+    <!--fragment_equity.xml-->
+    <string name="equity_investment">股权投资</string>
+
+    <!--activity_collection_article.xml-->
+    <string name="collection">收藏</string>
+
+    <!--popupwindow_details.xml-->
+    <string name="the_total_number">文章总数</string>
+    <string name="all_page_view">总计浏览量</string>
+    <string name="recent_posts">最新文章</string>
+
+    <!--activity_author.xml-->
+    <string name="pay_attention_to_the_people">关注的人</string>
+    <string name="pay_attention_to_the_company">关注的公司</string>
+    <string name="fans">粉丝</string>
+    <string name="posted_articles">发表的文章</string>
+
+    <!--fragment_mine_login.xml-->
+    <string name="login">登录</string>
+    <string name="phone_number">手机号/邮箱</string>
+    <string name="password">密码</string>
+    <string name="forgot_password">忘记密码</string>
+
+    <!--mine_registered_view.xml-->
+    <string name="registered">注册</string>
+
+    <!--fragment_mine_registered.xml-->
+    <string name="registered_user">注册成为36氪用户,即享一站式创业服务</string>
+    <string name="phone">手机号</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="you_agree_with">注册代表你同意</string>
+    <string name="use_agreement">36氪网络使用协议和隐私条款</string>
+
+    <!--fragment_mine.xml-->
+    <string name="not_logged_in">未登录</string>
+    <string name="my_message">我的消息</string>
+    <string name="my_order">我的订单</string>
+    <string name="account_information">账号信息</string>
+    <string name="to_throw_people_certification">跟投人认证</string>
+    <string name="news_man">新人专享5000元</string>
+    <string name="my_collection">我收藏的文章</string>
+    <string name="my_investment_company">我投资的公司</string>
+    <string name="my_investment_volume">我的投资卷</string>
+    <string name="understand_the_equity_investment">了解股权投资</string>
+    <string name="customer_service_hotline">客服热线</string>
+    <string name="hotline">400-995-3636</string>
+
+    <!--fragment_discovery.xml-->
+    <string name="search">搜索</string>
+    <string name="close_search">关闭搜索</string>
+    <string name="depth_of_the_services">深度服务项目</string>
+    <string name="startup">创业公司</string>
+    <string name="most_explosive">最具爆发力</string>
+    <string name="latest_emerging">最新涌现</string>
+    <string name="project_dynamic">项目动态</string>
+    <string name="investors_looking_at_the">投资人在看</string>
+    <string name="index">36氪指数</string>
+    <string name="institute_of">36氪研究院</string>
+    <string name="to_apply_for_funding">申请融资</string>
+    <string name="space_registration">氪空间报名</string>
+
+    <!--activity_recent_project_details.xml-->
+    <string name="close">关闭</string>
+    <string name="service_36ke">创业服务|36氪</string>
+    <string name="entrepreneurs">创业者报名</string>
+    <string name="more_activity">更多活动</string>
+
+    <!--listview_item_equity.xml-->
+    <string name="buy">认购</string>
+    <string name="investors">投资方</string>
+
+
+<!--极光推送部分-->
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+
+    <!--main.xml-->
+    <string name="initPush">initPush</string>
+    <string name="stopPush">stopPush</string>
+    <string name="resumePush">resumePush</string>
+    <string name="get_Registration_Id">get_Registration_Id</string>
+    <string name="advanced_features">高级功能</string>
+
+    <!--push_set_dialog.xml-->
+    <string name="set_Tag_Alias">设置Tag和Alias </string>
+    <string name="tag"> Tag :</string>
+    <string name="set_Tag">设置Tag  </string>
+    <string name="alias">Alias:</string>
+    <string name="set_Alias">设置Alias</string>
+    <string name="notification_bar">定制通知栏样式</string>
+    <string name="notification_bar_Basic">定制通知栏样式：Basic</string>
+    <string name="notification_bar_Custom">定制通知栏样式：Custom</string>
+    <string name="setting">设置</string>
+    <string name="set_receive_push_time">设置接收push时间</string>
+
+    <!--set_push_time.xml-->
+    <string name="quiet_week_enabled">Quiet Week Enabled</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="quiet_time_enabled">Quiet Time Enabled</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="ensure">确定</string>
+
+
+</resources>

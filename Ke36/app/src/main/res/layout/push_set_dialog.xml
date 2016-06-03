@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tiledstripes">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/twenty_dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/dark_grey1"
+            android:orientation="vertical"
+            android:padding="@dimen/ten_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_Tag_Alias"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/twenty_dp"
+            android:paddingTop="@dimen/twenty_dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tag" />
+
+                <EditText
+                    android:id="@+id/et_tag"
+                    style="@style/push_tag"
+                    android:layout_width="@dimen/one_hundred_sixty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/five_dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/fifteen_sp" />
+
+                <Button
+                    android:id="@+id/bt_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_Tag"
+                    android:textSize="@dimen/twelve_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alias" />
+
+                <EditText
+                    android:id="@+id/et_alias"
+                    style="@style/push_alias"
+                    android:layout_width="@dimen/one_hundred_sixty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/five_dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/fifteen_sp" />
+
+                <Button
+                    android:id="@+id/bt_alias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_Alias"
+                    android:textSize="@dimen/twelve_sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@color/dark_grey1"
+            android:orientation="vertical"
+            android:padding="@dimen/ten_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notification_bar"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/ten_dp"
+            android:paddingTop="@dimen/ten_dp">
+
+            <Button
+                android:id="@+id/setStyle1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notification_bar_Basic" />
+
+            <Button
+                android:id="@+id/setStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notification_bar_Custom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@color/dark_grey1"
+            android:orientation="vertical"
+            android:padding="@dimen/ten_dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/ten_dp"
+            android:paddingTop="@dimen/ten_dp">
+
+            <Button
+                android:id="@+id/bu_setTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:text="@string/set_receive_push_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

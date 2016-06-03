@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jindapeng.ke36.utils.RoundImage
+            android:id="@+id/equity_company_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/fifteen_dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/equity_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/five_dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/equity_company_logo"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <TextView
+            android:id="@+id/equity_company_brief"
+            android:layout_width="@dimen/two_hundred_dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equity_company_name"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/equity_company_logo"
+            android:textSize="@dimen/eleven_sp" />
+
+        <ImageView
+            android:layout_width="@dimen/one_hundred_dp"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/ten_dp"
+            android:src="@mipmap/author_tips_icon_first" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/equity_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/equity_file_list_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_hundred_sixty_dp"
+            android:src="@mipmap/logo_36kr_sougou" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/ten_dp">
+
+            <TextView
+                android:id="@+id/equity_adname_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five_dp"
+                android:text="@string/investors"
+                android:textSize="@dimen/eleven_sp" />
+
+            <TextView
+                android:id="@+id/equity_adname_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/equity_adname_one"
+                android:padding="@dimen/five_dp"
+                android:textSize="@dimen/eleven_sp" />
+
+            <TextView
+                android:id="@+id/equity_adname_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/equity_adname_two"
+                android:padding="@dimen/five_dp"
+                android:textSize="@dimen/eleven_sp" />
+
+            <TextView
+                android:id="@+id/equity_adname_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/equity_adname_three"
+                android:padding="@dimen/five_dp"
+                android:textSize="@dimen/twelve_sp" />
+
+            <TextView
+                android:id="@+id/equity_adcontent_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/five_dp"
+                android:textSize="@dimen/eleven_sp" />
+
+            <TextView
+                android:id="@+id/equity_adcontent_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/equity_adname_one"
+                android:padding="@dimen/five_dp"
+                android:textSize="@dimen/eleven_sp" />
+
+            <TextView
+                android:id="@+id/equity_adcontent_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/equity_adcontent_two"
+                android:padding="@dimen/five_dp"
+                android:textSize="@dimen/eleven_sp" />
+
+            <TextView
+                android:id="@+id/equity_adcontent_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/equity_adcontent_three"
+                android:padding="@dimen/five_dp"
+                android:textSize="@dimen/eleven_sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/one_dp"
+        android:layout_marginLeft="@dimen/fifteen_dp"
+        android:layout_marginRight="@dimen/fifteen_dp"
+        android:background="@color/color_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fifteen_dp">
+
+        <TextView
+            android:id="@+id/equity_crowd_funding_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:id="@+id/equity_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_toLeftOf="@+id/equity_true_btn" />
+
+        <TextView
+            android:id="@+id/equity_true_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/coomon_icon_activity_wei"
+            android:paddingBottom="@dimen/five_dp"
+            android:paddingLeft="@dimen/twenty_dp"
+            android:paddingRight="@dimen/twenty_dp"
+            android:paddingTop="@dimen/five_dp"
+            android:text="@string/buy"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/color_grey" />
+</LinearLayout>

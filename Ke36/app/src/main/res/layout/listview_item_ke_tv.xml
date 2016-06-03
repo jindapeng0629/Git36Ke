@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:descendantFocusability="blocksDescendants">
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/two_hundred_dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ke_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fifty_dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/twenty_sp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/forty_five_dp"
+        android:layout_height="@dimen/forty_five_dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ke_tv_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_hundred_dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/news_ke_tv_playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ke_tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/fifteen_dp"
+        android:src="@mipmap/news_krtv_play" />
+
+</RelativeLayout>

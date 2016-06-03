@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_login_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:background="@drawable/shape_edit"
+        android:cursorVisible="false"
+        android:hint="@string/phone_number"
+        android:paddingBottom="@dimen/fifteen_dp"
+        android:paddingTop="@dimen/fifteen_dp" />
+
+    <EditText
+        android:id="@+id/et_login_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:background="@drawable/shape_edit"
+        android:cursorVisible="false"
+        android:hint="@string/password"
+        android:paddingBottom="@dimen/fifteen_dp"
+        android:paddingTop="@dimen/fifteen_dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingBottom="@dimen/ten_dp"
+        android:paddingTop="@dimen/ten_dp"
+        android:text="@string/forgot_password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edit"
+        android:text="@string/login"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/twenty_sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty_dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/mine_login_icon_wechat" />
+
+        <ImageView
+            android:id="@+id/mine_login_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/mine_login_icon_qq" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/mine_login_icon_weibo" />
+
+    </LinearLayout>
+</LinearLayout>

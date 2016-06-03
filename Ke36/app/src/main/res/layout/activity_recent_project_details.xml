@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/details_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fifteen_dp"
+            android:src="@mipmap/common_icon_back" />
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/details_back_img"
+            android:text="@string/close"
+            android:textColor="@color/color_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/service_36ke"
+            android:textSize="@dimen/fifteen_sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/color_grey" />
+
+    <WebView
+        android:id="@+id/recent_details_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fifteen_dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/common_icon_activity_jin"
+            android:paddingBottom="@dimen/five_dp"
+            android:paddingLeft="@dimen/fifteen_dp"
+            android:paddingRight="@dimen/fifteen_dp"
+            android:paddingTop="@dimen/five_dp"
+            android:text="@string/entrepreneurs"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/more_activity" />
+
+    </RelativeLayout>
+</LinearLayout>

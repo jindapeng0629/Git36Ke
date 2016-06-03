@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/thirty_dp"
+    android:layout_marginRight="@dimen/thirty_dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/twenty_dp"
+        android:text="@string/registered_user" />
+
+    <EditText
+        android:id="@+id/et_registered_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@drawable/shape_edit"
+        android:cursorVisible="false"
+        android:hint="@string/phone"
+        android:paddingBottom="@dimen/fifteen_dp"
+        android:paddingTop="@dimen/fifteen_dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:background="@drawable/shape_edit"
+        android:text="@string/get_verification_code"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/twenty_sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_agree_with"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/twenty_dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_agreement"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/twenty_dp"/>
+</LinearLayout>

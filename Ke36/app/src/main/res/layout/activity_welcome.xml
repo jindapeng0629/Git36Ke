@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/flash_tv"
+        android:layout_width="@dimen/fifty_dp"
+        android:layout_height="@dimen/thirty_dp"
+        android:layout_margin="@dimen/twenty_dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:textColor="@color/color_grey"
+        android:textSize="@dimen/twenty_five_sp" />
+
+    <ImageView
+        android:id="@+id/flash_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/guidepage_ph1"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>

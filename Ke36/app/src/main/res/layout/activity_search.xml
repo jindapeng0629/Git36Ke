@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/close_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close_search"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/fifteen_dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <ListView
+        android:id="@+id/sv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/search_bg_about"
+        android:layout_below="@+id/search"/>
+</RelativeLayout>

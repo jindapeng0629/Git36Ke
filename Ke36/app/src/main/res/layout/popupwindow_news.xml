@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pop_rl_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp">
+
+        <ImageView
+            android:id="@+id/common_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifty_dp"
+            android:src="@mipmap/common_icon_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_rl_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp">
+
+        <ImageView
+            android:id="@+id/common_iv_all"
+            android:layout_width="@dimen/five_dp"
+            android:layout_height="@dimen/twenty_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifty_dp"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:background="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/all_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/common_iv_all"
+            android:button="@null"
+            android:text="@string/pop_all" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_rl_early_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp">
+
+        <ImageView
+            android:id="@+id/common_iv_early_project"
+            android:layout_width="@dimen/five_dp"
+            android:layout_height="@dimen/twenty_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifty_dp"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:background="@color/color_green" />
+
+        <RadioButton
+            android:id="@+id/early_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/common_iv_early_project"
+            android:button="@null"
+            android:text="@string/pop_early" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_rl_ke_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp">
+
+        <ImageView
+            android:id="@+id/common_iv_ke_tv"
+            android:layout_width="@dimen/five_dp"
+            android:layout_height="@dimen/twenty_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifty_dp"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:background="@color/color_yellow" />
+
+        <RadioButton
+            android:id="@+id/ke_tv_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/common_iv_ke_tv"
+            android:button="@null"
+            android:text="@string/pop_ke_tv" />
+
+    </RelativeLayout>
+
+</RadioGroup>

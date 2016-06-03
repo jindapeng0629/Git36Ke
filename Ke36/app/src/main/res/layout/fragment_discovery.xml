@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_blue"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/discovery_rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fifteen_dp"
+                android:background="@drawable/shape_search">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingRight="@dimen/thirty_dp"
+                    android:src="@mipmap/discovery_icon_search_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/thirty_dp"
+                    android:text="@string/search"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/discovery_icon_depth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/discovery_icon_fa" />
+
+                <ImageView
+                    android:id="@+id/discovery_icon_startup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/discovery_icon_startup" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/discovery_tv_depth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/fifteen_dp"
+                    android:text="@string/depth_of_the_services"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/discovery_tv_startup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:padding="@dimen/fifteen_dp"
+                    android:text="@string/startup"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/discovery_iv_explosive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:layout_weight="1"
+                android:src="@mipmap/discovery_icon_explosive" />
+
+            <ImageView
+                android:id="@+id/discovery_iv_emergence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:layout_weight="1"
+                android:src="@mipmap/discovery_icon_emergence" />
+
+            <ImageView
+                android:id="@+id/discovery_iv_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:layout_weight="1"
+                android:src="@mipmap/discovery_icon_dynamic" />
+
+            <ImageView
+                android:id="@+id/discovery_iv_investor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:layout_weight="1"
+                android:src="@mipmap/discovery_icon_investor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/discovery_tv_explosive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/fifteen_dp"
+                android:text="@string/most_explosive" />
+
+            <TextView
+                android:id="@+id/discovery_tv_emergence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/fifteen_dp"
+                android:text="@string/latest_emerging" />
+
+            <TextView
+                android:id="@+id/discovery_tv_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/fifteen_dp"
+                android:text="@string/project_dynamic" />
+
+            <TextView
+                android:id="@+id/discovery_tv_investor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/fifteen_dp"
+                android:text="@string/investors_looking_at_the" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:background="@color/color_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@android:color/white">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/one_dp"
+                android:background="@color/color_grey" />
+
+            <ImageView
+                android:id="@+id/mine_icon_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/discovery_icon_insight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/mine_icon_account"
+                android:text="@string/index" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/common_icon_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:background="@color/color_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/discovery_rl_recent_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/one_dp"
+                android:background="@color/color_grey" />
+
+            <ImageView
+                android:id="@+id/iv_recent_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/discovery_icon_activity" />
+
+            <TextView
+                android:id="@+id/tv_recent_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_recent_activity"
+                android:text="@string/activity_recent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/common_icon_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:background="@color/color_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/discovery_icon_institute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/common_icon_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/discovery_icon_institute"
+                android:text="@string/institute_of" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/common_icon_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:background="@color/color_grey" />
+
+        <RelativeLayout
+            android:id="@+id/discovery_rl_looking_investors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/discovery_icon_looking_investors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/discovery_icon_investors" />
+
+            <TextView
+                android:id="@+id/looking_investors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/discovery_icon_looking_investors"
+                android:text="@string/looking_investors" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/common_icon_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:background="@color/color_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/discovery_icon_financing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/discovery_icon_financing" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/discovery_icon_financing"
+                android:text="@string/to_apply_for_funding" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/common_icon_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:background="@color/color_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/discovery_icon_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/discovery_icon_signup" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/discovery_icon_signup"
+                android:text="@string/space_registration" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fifteen_dp"
+                android:src="@mipmap/common_icon_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:background="@color/color_grey" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

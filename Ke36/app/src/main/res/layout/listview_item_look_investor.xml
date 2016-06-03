@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.jindapeng.ke36.utils.RoundImage
+        android:id="@+id/looking_investors_image"
+        android:layout_width="@dimen/fifty_dp"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_margin="@dimen/fifteen_dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/looking_investors_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/looking_investors_image"
+        android:paddingTop="@dimen/fifteen_dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/fifteen_sp" />
+
+    <TextView
+        android:id="@+id/tv_look_foucs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/looking_investors_image"
+        android:layout_below="@+id/looking_investors_name"
+        android:paddingTop="@dimen/ten_dp"
+        android:textSize="@dimen/ten_sp" />
+
+    <TextView
+        android:id="@+id/tv_look_invest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_below="@+id/tv_look_foucs"
+        android:layout_toRightOf="@+id/looking_investors_image"
+        android:paddingTop="@dimen/ten_dp"
+        android:paddingBottom="@dimen/ten_dp"
+        android:textSize="@dimen/ten_sp" />
+
+</RelativeLayout>
