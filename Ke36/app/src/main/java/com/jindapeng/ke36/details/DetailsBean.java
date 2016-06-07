@@ -4,7 +4,6 @@ package com.jindapeng.ke36.details;
  * Created by dllo on 16/5/19.
  */
 public class DetailsBean {
-
     /**
      * code : 0
      * data : {"summary":"我们从计算机上可以学到的，其实是极少数极少数聪明人的思维方式和方法论。","publishTime":1451708442000,"updateTime":1463640532000,"columnId":70,"commentCount":3,"featureImg":"http://a.36krcnd.com/nil_class/f9b83fa2-9461-4c24-b1f5-558fb4f8ec06/yestone_HD_1101463988.jpg","type":"article","postId":5041796,"content":"不能容错的系统肯定是脆弱的","title":"不能容错的系统肯定是脆弱的","favoriteCount":65,"myFavorites":false,"columnName":"深度","user":{"avatar":"https://krplus-pic.b0.upaiyun.com/201603/22055321/cg0huhoojxi0iipw.jpg!800","name":"36氪的朋友们","ssoId":2690},"viewCount":21722}

@@ -71,7 +71,7 @@ public class EquityFragment extends BaseFragment implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.iv_icon_search:
                 Intent intentSearch = new Intent(getContext(), SearchActivity.class);
                 startActivity(intentSearch);//跳转到搜索页面

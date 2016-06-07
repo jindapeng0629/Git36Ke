@@ -37,8 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/item_image_view"
         android:layout_toRightOf="@+id/item_author"
-        android:paddingTop="@dimen/fifteen_dp"
         android:paddingBottom="@dimen/fifteen_dp"
+        android:paddingTop="@dimen/fifteen_dp"
         android:textSize="@dimen/ten_sp" />
 
     <TextView

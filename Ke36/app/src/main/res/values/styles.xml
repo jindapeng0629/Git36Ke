@@ -7,19 +7,23 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="push_style">
         <item name="android:hint">@string/style_hint</item>
         <item name="android:inputType">number</item>
         <item name="android:textSize">14sp</item>
     </style>
+
     <style name="push_alias">
         <item name="android:hint">@string/alias_hint</item>
         <item name="android:textSize">14sp</item>
     </style>
+
     <style name="push_tag">
         <item name="android:hint">@string/tag_hint</item>
         <item name="android:textSize">14sp</item>
     </style>
+
     <style name="AnimationFade">
         <!-- PopupWindow左右弹出的效果 -->
         <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>

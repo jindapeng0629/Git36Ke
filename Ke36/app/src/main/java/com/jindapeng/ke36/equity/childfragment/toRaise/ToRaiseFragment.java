@@ -19,6 +19,7 @@ public class ToRaiseFragment extends BaseFragment implements AdapterView.OnItemC
     private ListView listView;
     private ToRaiseAdapter toRaiseAdapter;
     private ToRaiseBean toRaiseBean;
+
     @Override
     public int setLayout() {
         return R.layout.fragment_equity_to_raise;

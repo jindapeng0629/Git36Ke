@@ -3,7 +3,7 @@
     android:id="@+id/actionbarLayoutId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/rlRichpushTitleBar"
@@ -38,14 +38,14 @@
             android:layout_toRightOf="@id/imgView"
             android:clickable="false"
             android:text=" "
-            android:textSize="@dimen/twenty_sp"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/twenty_sp" />
     </RelativeLayout>
 
     <WebView
+        android:id="@+id/fullWebView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fullWebView"
         android:background="@android:color/black" />
 
 </cn.jpush.android.ui.FullScreenView>

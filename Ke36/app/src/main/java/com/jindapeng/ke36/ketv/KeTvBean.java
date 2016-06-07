@@ -6,7 +6,6 @@ import java.util.List;
  * Created by dllo on 16/5/14.
  */
 public class KeTvBean {
-
     /**
      * code : 0
      * data : {"page":1,"totalCount":0,"data":[{"tv":{"videoSource360":"http://7rfkz6.com1.z0.glb.clouddn.com/360p_1304_XMTUzOTMxODU2MA.mp4","id":"603","videoSource720":"http://7rfkz6.com1.z0.glb.clouddn.com/720p_1435_XMTUzOTMxODU2MA.mp4","title":"「氪 TV 测评」HTC Vive 上手体验","duration":"3 分钟","videoSource":"http://7rfkz6.com1.z0.glb.clouddn.com/480p_1407_XMTUzOTMxODU2MA.mp4","publishTime":1460967906000,"youkuUrl":"http://v.youku.com/v_show/id_XMTUzOTMxODU2MA==","videoSource480":"http://7rfkz6.com1.z0.glb.clouddn.com/480p_1407_XMTUzOTMxODU2MA.mp4","featureImg":"http://a.36krcnd.com/nil_class/697500ee-20ef-4d91-af1a-b14aa71aef8d/443ddc1b-9d05-4144-8e12-9e604f7adb2c.jpg","durationLong":230},"columnName":"氪TV","columnId":"tv","type":"tv"}],"pageSize":20,"totalPages":0}

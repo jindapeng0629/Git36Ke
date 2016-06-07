@@ -2,7 +2,6 @@ package com.jindapeng.ke36.news.header;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,6 @@ import it.sephiroth.android.library.picasso.Picasso;
  * Created by dllo on 16/5/13.
  */
 public class NewsHeaderAdapter extends PagerAdapter {
-
     private List<HeaderBean> imageViews;
     private Context context;
 

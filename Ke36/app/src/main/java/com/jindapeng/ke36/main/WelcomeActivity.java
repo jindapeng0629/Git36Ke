@@ -1,9 +1,6 @@
 package com.jindapeng.ke36.main;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.ImageView;
@@ -11,13 +8,6 @@ import android.widget.TextView;
 
 import com.jindapeng.ke36.R;
 import com.jindapeng.ke36.base.BaseActivity;
-import com.jindapeng.ke36.utils.DiskCache;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import cn.jpush.android.api.JPushInterface;
 
@@ -51,7 +41,7 @@ public class WelcomeActivity extends BaseActivity {
 
     @Override
     protected void initData() {
-        time = new CountDownTimer(1000, 3000) {// 一秒后执行,执行时间是一秒
+        time = new CountDownTimer(5000, 2000) {// 执行时间是五秒，两秒后执行。
 
             @Override
             public void onTick(long millisUntilFinished) {

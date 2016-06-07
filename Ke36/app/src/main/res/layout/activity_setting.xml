@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/fifteen_dp"
+            android:text="@string/setting"
+            android:textSize="@dimen/twenty_sp" />
+
+        <ImageView
+            android:id="@+id/setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fifteen_dp"
+            android:src="@mipmap/common_icon_back" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/one_dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:background="@color/color_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/mine_icon_account"
+            android:text="消息设置" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/fifteen_dp"
+            android:src="@mipmap/common_icon_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/color_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:background="@color/color_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/mine_icon_account"
+            android:text="允许非Wi-Fi网络播放视频" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/fifteen_dp"
+            android:src="@mipmap/common_icon_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:background="@color/color_grey" />
+
+        <TextView
+            android:id="@+id/clear_the_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/mine_icon_account"
+            android:text="清理缓存" />
+
+        <TextView
+            android:id="@+id/the_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/fifteen_dp"
+            android:src="@mipmap/common_icon_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/color_grey" />
+
+    <RelativeLayout
+        android:id="@+id/discovery_rl_recent_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/one_dp"
+            android:background="@color/color_grey" />
+
+        <TextView
+            android:id="@+id/tv_recent_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/iv_recent_activity"
+            android:text="关于36氪" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/fifteen_dp"
+            android:src="@mipmap/common_icon_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/one_dp"
+        android:layout_marginLeft="@dimen/fifteen_dp"
+        android:layout_marginRight="@dimen/fifteen_dp"
+        android:background="@color/color_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/discovery_icon_institute"
+            android:text="评分" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/fifteen_dp"
+            android:src="@mipmap/common_icon_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/one_dp"
+        android:layout_marginLeft="@dimen/fifteen_dp"
+        android:layout_marginRight="@dimen/fifteen_dp"
+        android:background="@color/color_grey" />
+
+    <RelativeLayout
+        android:id="@+id/discovery_rl_looking_investors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/looking_investors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_toRightOf="@+id/discovery_icon_looking_investors"
+            android:text="意见反馈" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/fifteen_dp"
+            android:src="@mipmap/common_icon_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/color_grey" />
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_red"
+        android:text="退出登录"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.MediaController;
@@ -24,9 +25,6 @@ import it.sephiroth.android.library.picasso.Picasso;
 public class KeTvAdapter extends BaseAdapter {
     private Context context;
     private KeTvBean keTvBean;
-
-    private int currentIndex = -1;
-    private int playPosition = -1;
     private boolean isPaused = false;
     private boolean isPlaying = false;
 
@@ -46,109 +44,67 @@ public class KeTvAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return keTvBean.getData().getPageSize();
+        return keTvBean.getData().getData().get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return position;
+        return 0;
     }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         final ViewHolder holder;
-        final int mPosition = position;
+
         if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.listview_item_ke_tv, parent, false);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
+            if (holder.videoSource.getVisibility() == View.VISIBLE) {
+                holder.title.setVisibility(View.VISIBLE);
+                holder.featureImg.setVisibility(View.VISIBLE);
+                holder.videoSource.setVisibility(View.INVISIBLE);
+            }
         }
 
-        String title = keTvBean.getData().getData().get(position).getTv().getTitle();
-        final String videoSource = keTvBean.getData().getData().get(position).getTv().getVideoSource();
+        final String title = keTvBean.getData().getData().get(position).getTv().getTitle();
+        String videoSource = keTvBean.getData().getData().get(position).getTv().getVideoSource();
         String imageUrl = keTvBean.getData().getData().get(position).getTv().getFeatureImg();
+
         holder.title.setText(title);
         holder.videoSource.setVideoURI(Uri.parse(videoSource));
         Picasso.with(context).load(imageUrl).into(holder.featureImg);
-        holder.title.setVisibility(View.VISIBLE);
-        holder.playBtn.setVisibility(View.VISIBLE);
-        holder.featureImg.setVisibility(View.VISIBLE);
 
         MediaController controller = new MediaController(context, false);
+        holder.videoSource.setVisibility(View.VISIBLE);
+        controller.setAnchorView(holder.videoSource);
+        controller.setMediaPlayer(holder.videoSource);
+        holder.videoSource.setMediaController(controller);
+        holder.videoSource.requestFocus();
+        holder.progressBar.setVisibility(View.VISIBLE);
 
-        if(currentIndex == position){
-            Log.d("3",currentIndex+"currentIndex == position");
-            holder.playBtn.setVisibility(View.INVISIBLE);
-            holder.featureImg.setVisibility(View.INVISIBLE);
-            holder.title.setVisibility(View.INVISIBLE);
-
-            if(isPlaying || playPosition==-1){
-                if(holder.videoSource!=null){
-                    Log.d("这段不让播了",holder.videoSource+"mVideoView!=null");
-                    holder.videoSource.setVisibility(View.GONE);
-                    holder.videoSource.stopPlayback();
-                    holder.progressBar.setVisibility(View.GONE);
-                }
-            }
-
-            holder.videoSource.setVisibility(View.VISIBLE);
-            controller.setAnchorView(holder.videoSource);
-            controller.setMediaPlayer(holder.videoSource);
-            holder.videoSource.setMediaController(controller);
-            holder.videoSource.requestFocus();
-            holder.progressBar.setVisibility(View.VISIBLE);
-
-
-            holder.videoSource.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mp) {
-                    if(holder.videoSource!=null){
-                        holder.videoSource.seekTo(0);
-                        holder.videoSource.stopPlayback();
-                        currentIndex=-1;
-                        isPaused=false;
-                        isPlaying=false;
-                        holder.progressBar.setVisibility(View.GONE);
-                        notifyDataSetChanged();
-                    }
-                }
-            });
-            holder.videoSource.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-
-                @Override
-                public void onPrepared(MediaPlayer mp) {
-                    holder.progressBar.setVisibility(View.GONE);
-                    holder.videoSource.start();
-                }
-            });
-
-        }else{
-            holder.playBtn.setVisibility(View.VISIBLE);
-            holder.featureImg.setVisibility(View.VISIBLE);
-            holder.title.setVisibility(View.VISIBLE);
-            holder.progressBar.setVisibility(View.GONE);
-            Log.d("这段不播", "++___++"+holder.progressBar);
-        }
-
-        holder.playBtn.setOnClickListener(new View.OnClickListener() {
+        holder.featureImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentIndex = position;
-                playPosition=-1;
-                if(playPosition>0 && isPaused){
-                    isPaused=false;
-                    isPlaying=true;
+                if (isPaused && isPlaying) {
                     holder.videoSource.start();
+                    holder.playBtn.setVisibility(View.INVISIBLE);
+                    holder.featureImg.setVisibility(View.INVISIBLE);
+                    holder.title.setVisibility(View.INVISIBLE);
                     holder.progressBar.setVisibility(View.GONE);
-                }else{
-                    isPaused=false;
-                    isPlaying=true;
-                    holder.videoSource.setVideoURI(Uri.parse(videoSource));
-                    System.out.println("播放新的视频");
+                    System.out.println("播放视频");
+                }else {
+                    holder.videoSource.pause();
+                    holder.playBtn.setVisibility(View.VISIBLE);
+                    holder.featureImg.setVisibility(View.VISIBLE);
+                    holder.title.setVisibility(View.VISIBLE);
+                    holder.progressBar.setVisibility(View.GONE);
+                    System.out.println("暂停视频");
                 }
                 notifyDataSetChanged();
+
             }
         });
 

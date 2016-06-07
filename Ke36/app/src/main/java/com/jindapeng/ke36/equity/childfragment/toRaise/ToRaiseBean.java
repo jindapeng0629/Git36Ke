@@ -7,7 +7,6 @@ import java.util.List;
  * 募资中的实体类
  */
 public class ToRaiseBean {
-
     /**
      * code : 0
      * data : {"page":1,"totalCount":2,"pageSize":20,"data":[{"can_exit":false,"cf_advantage":[{"adcontent":"管理经验和资源优势强","adname":"创始人"},{"adcontent":"线上+线下完美结合","adname":"团队成员"}],"cf_raising":"￥1400万","cf_success_raising_offer":"￥1067万","company_brief":"健康行业领先的SaaS服务平台","company_id":154573,"company_logo":"https://krplus-pic.b0.upaiyun.com/201512/01045835/5umei1tvdivd9ohk.png!200","company_name":"华佗驾到（潼诚一得）","crowdFundingId":180,"file_list_img":"https://krplus-pic.b0.upaiyun.com/201605/17/51e6a0f91d4ee855f8e6777be5e39e8f.png","followed":false,"fundStatus":{"crowd_funding_status":"MAO_DING","desc":"05月27日 10:00 募资","start_time":1464314400000},"lead_name":"海鼎资本","min_investment":"￥5万","payUrl":"https://z.36kr.com/m/deposit/confirm?id=180","rate":0.76},{"can_exit":false,"cf_advantage":[{"adcontent":"连续创业、户外超人","adname":"创始人"},{"adcontent":"央视大型栏目运营","adname":"团队成员"},{"adcontent":"英诺、老鹰、星瀚等","adname":"上轮融资"}],"cf_raising":"￥1000万","cf_success_raising_offer":"￥1366万","company_brief":"户外星球，全球高端户外项目综合性平台。","company_id":189842,"company_logo":"https://krplus-pic.b0.upaiyun.com/com_logo_v3/logo_off_31741.jpg!200","company_name":"户外星球","crowdFundingId":179,"file_list_img":"https://krplus-pic.b0.upaiyun.com/201604/15/be4117becebb1c35c3129ed84a968f9e.jpg","followed":false,"fundStatus":{"crowd_funding_status":"MU_ZI","desc":"募资中","start_time":0},"lead_name":"壹号资本","min_investment":"￥5万","payUrl":"https://z.36kr.com/m/deposit/confirm?id=179","rate":1.37}]}

@@ -7,7 +7,6 @@ import java.util.List;
  * 全部的实体类
  */
 public class AllBean {
-
     private int code;
     private DataBean data;
     private String msg;

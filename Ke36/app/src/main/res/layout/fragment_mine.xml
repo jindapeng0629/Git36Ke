@@ -48,13 +48,13 @@
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/twenty_sp" />
 
-            <com.jindapeng.ke36.utils.RoundImage
+            <com.jindapeng.ke36.utils.RoundImageView
                 android:id="@+id/mine_common_avatar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/fifteen_dp"
                 android:layout_margin="@dimen/fifteen_dp"
-                android:src="@mipmap/mine_icon_avatar" />
+                android:src="@mipmap/ic_launcher" />
         </RelativeLayout>
 
         <LinearLayout

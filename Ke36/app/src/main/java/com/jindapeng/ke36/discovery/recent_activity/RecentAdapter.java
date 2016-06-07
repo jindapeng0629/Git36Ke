@@ -68,7 +68,7 @@ public class RecentAdapter extends BaseAdapter {
 
     class ViewHolder {
         ImageView activityImg;
-        TextView activityCity,activityDesc,activityName,activityStatus,activityTime;
+        TextView activityCity, activityDesc, activityName, activityStatus, activityTime;
 
         public ViewHolder(View view) {
             activityImg = (ImageView) view.findViewById(R.id.activity_img);

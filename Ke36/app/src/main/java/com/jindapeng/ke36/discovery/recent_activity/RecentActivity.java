@@ -129,11 +129,11 @@ public class RecentActivity extends BaseActivity implements View.OnClickListener
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         Bundle bundle = new Bundle();
-        bundle.putString("link",recentBean.getData().getData1().get(position).getActivityLink());
+        bundle.putString("link", recentBean.getData().getData1().get(position).getActivityLink());
 
-        Log.d("activitylink",recentBean.getData().getData1().get(position).getActivityLink());
+        Log.d("activitylink", recentBean.getData().getData1().get(position).getActivityLink());
 
-        Intent intent = new Intent(this,RecentDetailsActivity.class);
+        Intent intent = new Intent(this, RecentDetailsActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
 

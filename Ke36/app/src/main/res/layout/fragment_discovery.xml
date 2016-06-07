@@ -222,7 +222,7 @@
             android:background="@android:color/white"
             android:orientation="vertical">
 
-        <RelativeLayout
+            <RelativeLayout
             android:id="@+id/discovery_rl_recent_activities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -256,144 +256,144 @@
                 android:src="@mipmap/common_icon_arrow" />
         </RelativeLayout>
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/one_dp"
-            android:layout_marginLeft="@dimen/fifteen_dp"
-            android:background="@color/color_grey" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white">
-
-            <ImageView
-                android:id="@+id/discovery_icon_institute"
+            <View
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/fifteen_dp"
-                android:src="@mipmap/common_icon_search" />
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:background="@color/color_grey" />
 
-            <TextView
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/discovery_icon_institute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@mipmap/common_icon_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/discovery_icon_institute"
+                    android:text="@string/institute_of" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@mipmap/common_icon_arrow" />
+            </RelativeLayout>
+
+            <View
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/discovery_icon_institute"
-                android:text="@string/institute_of" />
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:background="@color/color_grey" />
 
-            <ImageView
+            <RelativeLayout
+                android:id="@+id/discovery_rl_looking_investors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/discovery_icon_looking_investors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@mipmap/discovery_icon_investors" />
+
+                <TextView
+                    android:id="@+id/looking_investors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/discovery_icon_looking_investors"
+                    android:text="@string/looking_investors" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@mipmap/common_icon_arrow" />
+            </RelativeLayout>
+
+            <View
                 android:layout_width="wrap_content"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:background="@color/color_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="@dimen/fifteen_dp"
-                android:src="@mipmap/common_icon_arrow" />
-        </RelativeLayout>
+                android:background="@android:color/white">
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/one_dp"
-            android:layout_marginLeft="@dimen/fifteen_dp"
-            android:background="@color/color_grey" />
+                <ImageView
+                    android:id="@+id/discovery_icon_financing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@mipmap/discovery_icon_financing" />
 
-        <RelativeLayout
-            android:id="@+id/discovery_rl_looking_investors"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/discovery_icon_financing"
+                    android:text="@string/to_apply_for_funding" />
 
-            <ImageView
-                android:id="@+id/discovery_icon_looking_investors"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@mipmap/common_icon_arrow" />
+            </RelativeLayout>
+
+            <View
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/fifteen_dp"
-                android:src="@mipmap/discovery_icon_investors" />
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:background="@color/color_grey" />
 
-            <TextView
-                android:id="@+id/looking_investors"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/discovery_icon_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@mipmap/discovery_icon_signup" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/discovery_icon_signup"
+                    android:text="@string/space_registration" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@mipmap/common_icon_arrow" />
+            </RelativeLayout>
+
+            <View
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/discovery_icon_looking_investors"
-                android:text="@string/looking_investors" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="@dimen/fifteen_dp"
-                android:src="@mipmap/common_icon_arrow" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/one_dp"
-            android:layout_marginLeft="@dimen/fifteen_dp"
-            android:background="@color/color_grey" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white">
-
-            <ImageView
-                android:id="@+id/discovery_icon_financing"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/fifteen_dp"
-                android:src="@mipmap/discovery_icon_financing" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/discovery_icon_financing"
-                android:text="@string/to_apply_for_funding" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="@dimen/fifteen_dp"
-                android:src="@mipmap/common_icon_arrow" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/one_dp"
-            android:layout_marginLeft="@dimen/fifteen_dp"
-            android:background="@color/color_grey" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white">
-
-            <ImageView
-                android:id="@+id/discovery_icon_signup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/fifteen_dp"
-                android:src="@mipmap/discovery_icon_signup" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/discovery_icon_signup"
-                android:text="@string/space_registration" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="@dimen/fifteen_dp"
-                android:src="@mipmap/common_icon_arrow" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/one_dp"
-            android:background="@color/color_grey" />
+                android:layout_height="@dimen/one_dp"
+                android:background="@color/color_grey" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

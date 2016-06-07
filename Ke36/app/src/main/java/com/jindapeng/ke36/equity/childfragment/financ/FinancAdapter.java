@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.jindapeng.ke36.R;
-import com.jindapeng.ke36.utils.RoundImage;
+import com.jindapeng.ke36.utils.RoundImageView;
 
 import it.sephiroth.android.library.picasso.MemoryPolicy;
 import it.sephiroth.android.library.picasso.Picasso;
@@ -90,7 +90,7 @@ public class FinancAdapter extends BaseAdapter {
         TextView adcontentTwo, adnameTwo, adcontentOne, adnameOne, trueBtn,
                 lead_name, companyBrief, companyName, desc, crowdFundingStatus;
         ImageView fileListImg;
-        RoundImage companyLogo;
+        RoundImageView companyLogo;
 
         public ViewHolder(View itemView) {
             lead_name = (TextView) itemView.findViewById(R.id.equity_adcontent_one);
@@ -108,7 +108,7 @@ public class FinancAdapter extends BaseAdapter {
             crowdFundingStatus = (TextView) itemView.findViewById(R.id.equity_crowd_funding_status);
 
             fileListImg = (ImageView) itemView.findViewById(R.id.equity_file_list_img);
-            companyLogo = (RoundImage) itemView.findViewById(R.id.equity_company_logo);
+            companyLogo = (RoundImageView) itemView.findViewById(R.id.equity_company_logo);
         }
 
     }

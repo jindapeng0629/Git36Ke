@@ -48,9 +48,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="@dimen/five_dp"
             android:layout_marginBottom="@dimen/five_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_weight="1"
             android:src="@mipmap/discovery_recent_icon_down" />
 
         <TextView
@@ -63,10 +63,10 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/eighty_dp"
-            android:layout_weight="1"
-            android:layout_marginTop="@dimen/five_dp"
             android:layout_marginBottom="@dimen/five_dp"
+            android:layout_marginRight="@dimen/eighty_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_weight="1"
             android:src="@mipmap/discovery_recent_icon_down" />
 
     </LinearLayout>
@@ -80,8 +80,8 @@
         android:id="@+id/recent_list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/white"
         android:paddingLeft="@dimen/fifteen_dp"
-        android:paddingRight="@dimen/fifteen_dp"
-        android:background="@android:color/white" />
+        android:paddingRight="@dimen/fifteen_dp" />
 
 </LinearLayout>

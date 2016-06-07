@@ -19,6 +19,7 @@ public class RaiseCompleteFragment extends BaseFragment implements AdapterView.O
     private ListView listView;
     private RaiseCompleteAdapter raiseCompleteAdapter;
     private RaiseCompleteBean raiseCompleteBean;
+
     @Override
     public int setLayout() {
         return R.layout.fragment_equity_raise_complete;

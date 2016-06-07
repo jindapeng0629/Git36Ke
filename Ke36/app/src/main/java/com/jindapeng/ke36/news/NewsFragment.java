@@ -104,7 +104,7 @@ public class NewsFragment extends BaseFragment implements AdapterView.OnItemClic
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
             }
-
+            // 加入同步的黑白点切换
             @Override
             public void onPageSelected(int position) {
                 for (int i = 0; i < images.size(); i++) {
@@ -122,7 +122,7 @@ public class NewsFragment extends BaseFragment implements AdapterView.OnItemClic
 
         // 设置轮播
         startRotate();
-        // 此处解析是为了已进入就显示数据信息
+        // 此处解析是为了一进入就显示数据信息
         VolleySingle.addRequest("http://rong.36kr.com/api/mobi/news?pageSize=20&columnId=all&pagingAction=up",
                 NewsBean.class, new Response.Listener<NewsBean>() {
                     @Override
@@ -183,8 +183,6 @@ public class NewsFragment extends BaseFragment implements AdapterView.OnItemClic
             }
         });
         pullToRefreshListView.setAdapter(newsAdapter);// 绑定适配器
-
-
     }
 
     /**
@@ -200,7 +198,7 @@ public class NewsFragment extends BaseFragment implements AdapterView.OnItemClic
                 int nowIndex = viewPager.getCurrentItem();
                 // 设置ViewPager的页数是当前页自增1
                 // 这里要判断,轮播的下一张page不能超过viewpager的count
-                // 否则会崩2
+                // 否则会崩
                 viewPager.setCurrentItem(++nowIndex);
                 if (isRotate) {
                     // handler延时发送线程,实现轮播
@@ -241,21 +239,22 @@ public class NewsFragment extends BaseFragment implements AdapterView.OnItemClic
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         Bundle bundle = new Bundle();
-        Long feedId = Long.valueOf(newsBean.getData().getData1().get(position-2).getFeedId());
-        bundle.putLong("feedId",feedId );
-        bundle.putString("title", newsBean.getData().getData1().get(position-2).getTitle());
-        bundle.putLong("publishTime", newsBean.getData().getData1().get(position-2).getPublishTime());
-        bundle.putString("columnName", newsBean.getData().getData1().get(position-2).getColumnName());
-        bundle.putString("name", newsBean.getData().getData1().get(position-2).getUser().getName());
-        bundle.putString("featureImg", newsBean.getData().getData1().get(position-2).getFeatureImg());
+        Long feedId = Long.valueOf(newsBean.getData().getData1().get(position - 2).getFeedId());
+        bundle.putLong("feedId", feedId);
+        bundle.putString("title", newsBean.getData().getData1().get(position - 2).getTitle());
+        bundle.putLong("publishTime", newsBean.getData().getData1().get(position - 2).getPublishTime());
+        bundle.putString("columnName", newsBean.getData().getData1().get(position - 2).getColumnName());
+        bundle.putString("name", newsBean.getData().getData1().get(position - 2).getUser().getName());
+        bundle.putString("featureImg", newsBean.getData().getData1().get(position - 2).getFeatureImg());
+
         Intent intent = new Intent(getContext(), DetailsActivity.class);
         CollectionDao collectionDao = GreenDaoSingle.getOurInstance().getCollectionDao();
         List<Collection> collectionList = collectionDao.queryBuilder().list();// 查询表数据
         for (Collection collection : collectionList) {
             if (collection.getId().equals(feedId)) {
-                intent.putExtra("isCollection"+feedId, true);
-            }else {
-                intent.putExtra("isCollection"+feedId, false);
+                intent.putExtra("isCollection" + feedId, true);
+            } else {
+                intent.putExtra("isCollection" + feedId, false);
             }
         }
         intent.putExtras(bundle);// 将数据放入intent

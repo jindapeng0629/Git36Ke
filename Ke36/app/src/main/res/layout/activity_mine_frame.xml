@@ -9,26 +9,26 @@
         android:id="@+id/mine_icon_close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/mine_login_icon_close"
-        android:layout_margin="@dimen/fifteen_dp"/>
+        android:layout_margin="@dimen/fifteen_dp"
+        android:src="@mipmap/mine_login_icon_close" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@mipmap/mine_login_icon_logo_36kr"
+        android:paddingBottom="@dimen/five_dp"
         android:paddingTop="@dimen/five_dp"
-        android:paddingBottom="@dimen/five_dp"/>
+        android:src="@mipmap/mine_login_icon_logo_36kr" />
 
     <android.support.design.widget.TabLayout
         android:id="@+id/mine_tab"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/mine_viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:paddingLeft="@dimen/thirty_dp"
-        android:paddingRight="@dimen/thirty_dp"
-        android:background="@android:color/white"/>
+        android:paddingRight="@dimen/thirty_dp" />
 </LinearLayout>

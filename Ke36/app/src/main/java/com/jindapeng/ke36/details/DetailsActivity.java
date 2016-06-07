@@ -34,6 +34,7 @@ import com.jindapeng.ke36.base.VolleySingle;
 import com.jindapeng.ke36.greenDao.Collection;
 import com.jindapeng.ke36.greenDao.CollectionDao;
 import com.jindapeng.ke36.greenDao.GreenDaoSingle;
+import com.jindapeng.ke36.utils.RoundImageView;
 
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -48,11 +49,12 @@ import it.sephiroth.android.library.picasso.Picasso;
  * 新闻的详情页面
  */
 public class DetailsActivity extends BaseActivity implements View.OnClickListener {
-    private ImageView imgBtn, userImg, collectionImg, popImg, shareImg;
+    private ImageView imgBtn, collectionImg, popImg, shareImg;
     private TextView userTv, titleTv, timeTv, summaryTv, contentTv, totalCount, totalView;
     private DetailsBean detailsBean;
     private String postId;
     private long id;
+    private RoundImageView userImg;
 
     private PopupWindow popupWindow;
     private AuthorBean authorBean;

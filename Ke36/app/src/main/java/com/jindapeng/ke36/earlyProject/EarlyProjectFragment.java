@@ -19,7 +19,6 @@ import com.jindapeng.ke36.details.DetailsActivity;
 import com.jindapeng.ke36.greenDao.Collection;
 import com.jindapeng.ke36.greenDao.CollectionDao;
 import com.jindapeng.ke36.greenDao.GreenDaoSingle;
-import com.jindapeng.ke36.news.NewsBean;
 
 import java.util.List;
 
@@ -114,21 +113,21 @@ public class EarlyProjectFragment extends BaseFragment implements AdapterView.On
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Bundle bundle = new Bundle();
-        Long feedId = Long.valueOf(earlyProjectBean.getData().getData1().get(position-1).getFeedId());
-        bundle.putLong("feedId",feedId );
-        bundle.putString("title", earlyProjectBean.getData().getData1().get(position-1).getTitle());
-        bundle.putLong("publishTime", earlyProjectBean.getData().getData1().get(position-1).getPublishTime());
-        bundle.putString("columnName", earlyProjectBean.getData().getData1().get(position-1).getColumnName());
-        bundle.putString("name", earlyProjectBean.getData().getData1().get(position-1).getUser().getName());
-        bundle.putString("featureImg", earlyProjectBean.getData().getData1().get(position-1).getFeatureImg());
+        Long feedId = Long.valueOf(earlyProjectBean.getData().getData1().get(position - 1).getFeedId());
+        bundle.putLong("feedId", feedId);
+        bundle.putString("title", earlyProjectBean.getData().getData1().get(position - 1).getTitle());
+        bundle.putLong("publishTime", earlyProjectBean.getData().getData1().get(position - 1).getPublishTime());
+        bundle.putString("columnName", earlyProjectBean.getData().getData1().get(position - 1).getColumnName());
+        bundle.putString("name", earlyProjectBean.getData().getData1().get(position - 1).getUser().getName());
+        bundle.putString("featureImg", earlyProjectBean.getData().getData1().get(position - 1).getFeatureImg());
         Intent intent = new Intent(getContext(), DetailsActivity.class);
         CollectionDao collectionDao = GreenDaoSingle.getOurInstance().getCollectionDao();
         List<Collection> collectionList = collectionDao.queryBuilder().list();// 查询表数据
         for (Collection collection : collectionList) {
             if (collection.getId().equals(feedId)) {
-                intent.putExtra("isCollection"+feedId, true);
-            }else {
-                intent.putExtra("isCollection"+feedId, false);
+                intent.putExtra("isCollection" + feedId, true);
+            } else {
+                intent.putExtra("isCollection" + feedId, false);
             }
         }
         intent.putExtras(bundle);// 将数据放入intent

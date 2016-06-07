@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.jindapeng.ke36.R;
 import com.jindapeng.ke36.greenDao.Collection;
-import com.jindapeng.ke36.news.NewsBean;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

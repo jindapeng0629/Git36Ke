@@ -65,7 +65,7 @@ public class SearchAdapter extends BaseAdapter {
         final String columnName = searchBean.getData().getData().get(position).getColumnName();
         String imageUrl = searchBean.getData().getData().get(position).getFeatureImg();
         // Picasso组件,用来加载图片
-        Picasso.with(context).load(imageUrl).resize(150, 150).centerCrop() .into(holder.imageView);
+        Picasso.with(context).load(imageUrl).resize(150, 150).centerCrop().into(holder.imageView);
 
         holder.title.setText(title);
         holder.author.setText(author);
@@ -76,6 +76,7 @@ public class SearchAdapter extends BaseAdapter {
         holder.columnName.setText(columnName);
         return convertView;
     }
+
     class ViewHolder {
         TextView title, author, time, columnName;
         ImageView imageView;

@@ -16,9 +16,9 @@
         android:id="@+id/activity_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/ten_dp"
         android:layout_marginLeft="@dimen/five_dp"
         android:layout_marginRight="@dimen/five_dp"
+        android:layout_marginTop="@dimen/ten_dp"
         android:maxLines="1"
         android:textColor="@android:color/black"
         android:textSize="@dimen/fifteen_sp" />

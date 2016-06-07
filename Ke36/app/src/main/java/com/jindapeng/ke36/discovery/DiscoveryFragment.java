@@ -18,8 +18,8 @@ import com.jindapeng.ke36.search.SearchActivity;
  */
 public class DiscoveryFragment extends BaseFragment implements View.OnClickListener {
     private ImageView depthImage, startImage, explosiveImage, emergenceImage, dynamicImage,
-            investorImage ;
-    private TextView  depthTv, startTv, explosiveTv, emergenceTv, dynamicTv,
+            investorImage;
+    private TextView depthTv, startTv, explosiveTv, emergenceTv, dynamicTv,
             investorTv;
 
     @Override
@@ -29,8 +29,8 @@ public class DiscoveryFragment extends BaseFragment implements View.OnClickListe
 
     @Override
     public void initView(View view) {
-        depthImage= bindView(R.id.discovery_icon_depth);
-        startImage= bindView(R.id.discovery_icon_startup);
+        depthImage = bindView(R.id.discovery_icon_depth);
+        startImage = bindView(R.id.discovery_icon_startup);
         explosiveImage = bindView(R.id.discovery_iv_explosive);
         emergenceImage = bindView(R.id.discovery_iv_emergence);
         dynamicImage = bindView(R.id.discovery_iv_dynamic);

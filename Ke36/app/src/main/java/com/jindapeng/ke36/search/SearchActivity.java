@@ -3,7 +3,6 @@ package com.jindapeng.ke36.search;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -64,9 +63,9 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
         VolleySingle.addRequest("http://rong.36kr.com/api/mobi/news/search?keyword=" + query + "&page=1&pagesize=30", SearchBean.class, new Response.Listener<SearchBean>() {
             @Override
             public void onResponse(SearchBean response) {
-                    searchBean = response;
-                if (searchBean.getData().getTotalCount() <1) {
-                        Toast.makeText(SearchActivity.this, "搜索不到你要找的数据", Toast.LENGTH_SHORT).show();
+                searchBean = response;
+                if (searchBean.getData().getTotalCount() < 1) {
+                    Toast.makeText(SearchActivity.this, "搜索不到你要找的数据", Toast.LENGTH_SHORT).show();
 
                 } else {
                     searchAdapter.setSearchBean(searchBean);
@@ -100,7 +99,7 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.close_search:
                 finish();
                 break;

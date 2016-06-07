@@ -28,6 +28,7 @@ public class MainActivity extends BaseActivity {
     private MainAdapter mainAdapter;
     private List<Fragment> fragments;
     public static boolean isForeground = false;
+
     @Override
     protected int getLayout() {
         registerMessageReceiver();//注册服务
@@ -79,7 +80,7 @@ public class MainActivity extends BaseActivity {
     }
 
     // 初始化 JPush。如果已经初始化，但没有登录成功，则执行重新登录。
-    private void init(){
+    private void init() {
         JPushInterface.init(getApplicationContext());
     }
 

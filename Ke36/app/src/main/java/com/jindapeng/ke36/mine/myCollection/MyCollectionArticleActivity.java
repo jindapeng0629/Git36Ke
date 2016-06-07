@@ -40,24 +40,23 @@ public class MyCollectionArticleActivity extends BaseActivity implements View.On
         backImg.setOnClickListener(this);
         listView = bindView(R.id.collection_list_view);
         listView.setOnItemClickListener(this);
+    }
 
-        }
+    @Override
+    protected void initData() {
+        myCollectionAdapter = new MyCollectionAdapter(this);
+        collectionList = new ArrayList<>();
+        collectionDao = GreenDaoSingle.getOurInstance().getCollectionDao();
+        collectionList = collectionDao.queryBuilder().list();
+        myCollectionAdapter.setCollectionList(collectionList);
+        listView.setAdapter(myCollectionAdapter);
+    }
 
-        @Override
-        protected void initData() {
-            myCollectionAdapter = new MyCollectionAdapter(this);
-            collectionList = new ArrayList<>();
-            collectionDao = GreenDaoSingle.getOurInstance().getCollectionDao();
-            collectionList = collectionDao.queryBuilder().list();
-            myCollectionAdapter.setCollectionList(collectionList);
-            listView.setAdapter(myCollectionAdapter);
-        }
-
-        @Override
-        public void onClick(View v) {
-            switch (v.getId()){
-                case R.id.collection_backImg:
-                    finish();
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.collection_backImg:
+                finish();
                 break;
         }
     }
